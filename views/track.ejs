@@ -1,0 +1,23 @@
+
+<%- include('partials/header') %>
+<section class="container page">
+  <h2>Track Truck</h2>
+  <form action="/track" method="POST" class="form-inline">
+    <input name="bookingId" placeholder="Enter booking ID" required>
+    <button class="btn" type="submit">Track</button>
+  </form>
+
+  <% if (typeof result !== 'undefined') { %>
+    <% if (result) { %>
+      <div class="track-card">
+        <p><strong>ID:</strong> <%= result.id %></p>
+        <p><strong>Name:</strong> <%= result.name %></p>
+        <p><strong>Route:</strong> <%= result.pickup %> → <%= result.dropoff %></p>
+        <p><strong>Status:</strong> <%= result.status %></p>
+      </div>
+    <% } else { %>
+      <p class="notice">No booking found with that ID.</p>
+    <% } %>
+  <% } %>
+</section>
+<%- include('partials/footer') %>

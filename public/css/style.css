@@ -1,0 +1,44 @@
+
+:root{--accent:#ff6f00;--muted:#f4f6f8;--dark:#0b1f2d;--accent-2:#036}
+*{box-sizing:border-box}
+body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;color:var(--dark);background:#f7fafc}
+.container{max-width:1100px;margin:0 auto;padding:0 18px}
+.site-header{background:linear-gradient(90deg, rgba(0,0,0,0.35), rgba(0,0,0,0.15));position:sticky;top:0;z-index:50}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand a{color:white;font-weight:700;text-decoration:none;font-size:20px}
+.navlinks a{color:white;margin-left:18px;text-decoration:none;padding:6px 8px;border-radius:6px}
+.navlinks a:hover{background:rgba(255,255,255,0.06)}
+
+/* Hero */
+.hero{background-image:url('/images/hero.jpg');background-size:cover;background-position:center;padding:120px 0;color:white}
+.hero-inner{text-align:left}
+.hero h1{font-size:44px;margin:0 0 10px;font-weight:700}
+.hero p{font-size:18px;margin:0 0 18px}
+.hero-ctas .btn{margin-right:12px}
+
+/* Buttons */
+.btn{display:inline-block;background:var(--accent);color:white;padding:10px 16px;border-radius:8px;text-decoration:none;border:none;cursor:pointer}
+.btn-outline{background:transparent;border:2px solid rgba(255,255,255,0.15)}
+.btn-danger{background:#d9534f;color:white}
+
+/* Sections */
+.page{padding:40px 0}
+.form-grid label{display:block;margin-bottom:12px}
+.form-grid input,.form-grid textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:6px}
+.form-grid .full{grid-column:1/-1}
+
+/* cards */
+.features{display:flex;gap:18px;padding:40px 0}
+.card{flex:1;background:var(--muted);padding:20px;border-radius:10px}
+
+/* schedules grid */
+.schedules-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.schedule-card{background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(11,31,45,0.06)}
+
+/* admin */
+.admin-table{margin-top:20px}
+.admin-row{display:flex;justify-content:space-between;align-items:center;padding:12px;border-bottom:1px solid #eee}
+.admin-actions button{margin-left:8px}
+
+/* responsive */
+@media(max-width:720px){.navlinks{display:none}.hero{padding:60px 0}.hero h1{font-size:28px}}
