@@ -1,0 +1,12 @@
+/* user css (trimmed) */
+body{font-family:Arial, sans-serif;background:#f9f9f9;color:#333;margin:0}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 30px;background:#004080;color:#fff;position:sticky;top:0;z-index:100}
+.nav-brand{font-weight:bold;font-size:22px}
+.nav-menu{list-style:none;display:flex;gap:20px}
+.hamburger{display:none}
+.hero{background-size:cover;background-position:center;min-height:60vh;display:flex;align-items:center;justify-content:center;color:#fff;position:relative}
+.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.4)}
+.btn{padding:12px 20px;border-radius:8px;border:none;cursor:pointer}
+.primary{background:linear-gradient(90deg,#ff6a00,#ff9f1c);color:#fff}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.08);margin:20px auto;max-width:700px}
+form input,form select,form textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;margin-bottom:10px}

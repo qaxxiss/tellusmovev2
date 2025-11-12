@@ -1,0 +1,1 @@
+const hamburger=document.querySelector('.hamburger');const navMenu=document.querySelector('.nav-menu');if(hamburger)hamburger.addEventListener('click',()=>navMenu.classList.toggle('show'));document.querySelectorAll('.nav-menu a').forEach(a=>a.addEventListener('click',()=>navMenu.classList.remove('show')));
